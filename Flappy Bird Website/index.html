@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="icon" href="./assets/images/Flappy_Bird_icon.png" type="image"/>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="header" id="headerID">
+        <img src="./assets/images/logo.png" alt="Flappy Bird Logo" class="logo_img">
+    </div>
+
+    <div class="navigation" id="navbar">
+        <h3><a href="#flappy_bird_page">Flappy Bird</a> | <a href="#dev_page">Development</a> | <a href="#gameplay_page">Gameplay</a> | <a href="#discont_page">Discontinuation</a> | <a href="#dev_id">Developer</a></h3>
+        
+        <script>
+            window.onscroll = function() {myFunction()};
+    
+            var header = document.getElementById("navbar");
+    
+            var sticky = header.offsetTop;
+    
+            function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+    }
+        </script>
+    </div>
+
+    <div class="buttons">
+        <button style="width: 58px; height: 58px;"id="fb_button">
+            <img src="./assets/images/fb.png" class="button_img" title="Facebook Page">
+        </button>
+            <script>
+                document.getElementById("fb_button").addEventListener("click", redirect);
+                function redirect(){ window.location = "https://www.facebook.com/app.flappy.bird/"; }
+            </script>
+        
+        <button style="width: 58px; height: 58px;"id="flappybirdgame">
+            <img src="./assets/images/Flappy_Bird_icon.png" class="button_img" title="Play the Game!">
+        </button>
+            <script>
+                document.getElementById("flappybirdgame").addEventListener("click", redirect);
+                function redirect(){ window.location = "https://flappybird.io/"; }
+            </script>
+    </div>
+
+    <div class="intro">
+        <h1 id="flappy_bird_page">Flappy Bird</h1>
+        <p>
+            Flappy Bird is a mobile game for Android and iOS release in 2013, developed by Dong Nguyen, under his game development company <a href="https://dotgears.com/" target="_blank">DotGears.</a>The game was released in May 2013 but received a sudden spike in popularity in early 2014, becoming a sleeper hit. As of 2014, the game was taken down by its developer, but online remakes of the game have been made since.
+        </p>
+    </div>
+
+    <div class="flappybird1">
+        <img src="./assets/images/bird1.png" class="bird1">
+    </div>
+
+    <div class="dev">
+        <h1 id="dev_page">Development</h1>
+        <p>
+            Flappy Bird was created and developed by Dong Nguyen in two to three days. The bird character, Faby, was originally designed in 2012 for a cancelled platform game. 
+            <br>The gameplay was inspired by the act of bouncing a ping pong ball against a paddle for as long as possible. Initially the game was significantly easier than it became in the final version, but Nguyen said he found this version to be boring and subsequently tightened up the difficulty. He described the business plan of a free download with in-game advertisements as <b><i>"very common in the Japanese market"</i></b>.
+        </p>
+        <br><p>The game was released in May 2013 but received a sudden spike in popularity in early 2014, becoming a sleeper hit. Flappy Bird received poor reviews from some critics, who criticized its high level of difficulty and alleged plagiarism in graphics and game mechanics, while other reviewers found it addictive. At the end of January 2014, it was the most downloaded free game in the App Store for iOS. During this period, its developer said that Flappy Bird was earning $50,000 a day from in-app advertisements as well as sales.</p>
+    </div>
+
+    <div class="gameplay">
+        <h1 id="gameplay_page">Gameplay</h1>
+        <p>
+            In this game, the player controls the bird Faby which moves to the right persistently, each tap makes the bird jump up a certain amount. The goal of the player is to get through the scrolling pairs of pipes by flying through the gaps placed at random heights, all without touching them and losing.
+        </p>
+        <img src="assets/images/screenshot.gif" class="gameplay_img"> 
+    </div>
+
+    <div class="pipes">
+        <img src="./assets/images/pipes.png" class="pipes_img">
+    </div>
+
+    <div class="end">
+        <h1 id="discont_page">Discontinuation</h1>
+        <p>
+            On February 8, 2014, Nguyen announced on <a href="https://twitter.com/dongatory/status/432227971173068800" target="_blank">Twitter</a> that the game would be removed from both Apple's App Store and Google Play, writing: <b><i>"I am sorry Flappy Bird users, 22 hours from now, I will take Flappy Bird down. I cannot take this anymore."</i></b> He went on to say that taking down the game had <b><i>"nothing to do with legal issues".</i></b> The game was removed from both the App Store and Google Play exactly on time, much to the dismay of many fans.
+        </p>
+        <p><br>In an interview with Forbes, Nguyen cited the game's addictive nature for its cancellation, stating: "Flappy Bird was designed to play in a few minutes when you are relaxed. But it happened to become an addictive product. I think it has become a problem. To solve that problem, it's best to take down Flappy Bird. It's gone forever." Nguyen said that the guilt that he felt over the game was affecting his sleep and that his conscience was relieved after he took down the game.</p>
+        <div class="tweet">
+        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I am sorry &#39;Flappy Bird&#39; users, 22 hours from now, I will take &#39;Flappy Bird&#39; down. I cannot take this anymore.</p>&mdash; Dong Nguyen (@dongatory) <a href="https://twitter.com/dongatory/status/432227971173068800?ref_src=twsrc%5Etfw">February 8, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <img src="./assets/images/bird2.png" class="bird2">
+    </div>
+    <div class="developerpage">
+        <h1 class="developer" id="dev_id">Developer</h1>
+        <p>
+            Hello! I am John David Constantino, the developer of this website!
+        </p>
+        <div>
+            <img src="./assets/images/developer.png" class="cv">
+        </div>
+    </div>
+
+    <p class="source"> Information Source: <a href="https://en.wikipedia.org/wiki/Flappy_Bird" target="_blank">Flappy Bird Wikipedia</a></p>
+
+</body>

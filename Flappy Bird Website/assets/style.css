@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, 
+    BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a {
+    color:#24fa7e;
+}
+body {
+    background-color: #212121;
+}
+
+.navigation {
+    display: block;
+    background-color: #212121;
+    color: #e7e7e7;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.header {
+    background-image: linear-gradient(#24fa7e, #17c761);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logo_img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+.buttons {
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.button_img {
+    width: 55px;
+    height: 55px;
+}
+.intro {
+    display:inline-block;
+    color: #e7e7e7;
+    margin-left: 100px;
+    margin-right: 700px;
+    margin-top: 20px;
+}
+
+.bird1 {
+    display:inline-block;
+    float:right;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 30%;
+}
+
+.dev {
+    display: block;
+    color: #e7e7e7;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 700px;
+}
+
+.gameplay {
+    display: block;
+    color: #e7e7e7;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 700px;
+}
+
+.gameplay_img{
+    margin-top: 20px;
+    border-radius: 5%;
+    width: 30%;
+}
+.pipes_img {
+    display:inline-block;
+    float:right;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 30%;
+}
+
+.end {
+    display: block;
+    color: #e7e7e7;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 700px;
+}
+
+.tweet {
+    margin-top: 20px;
+}
+
+.bird2{
+    margin-top: 20px;
+    width: 30%;
+}
+
+.source {
+    display: block;
+    color: #e7e7e7;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.content {
+    padding: 20px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+.developerpage {
+    display: block;
+    color: #e7e7e7;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 700px;
+}
+
+.cv {
+    margin-top: 20px;
+    border-radius: 5%;
+    width: 100%;
+}
